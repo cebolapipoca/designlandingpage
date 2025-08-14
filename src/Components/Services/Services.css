@@ -1,0 +1,59 @@
+
+.Services_Info {
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     padding: 20px;
+
+     & h2 {
+        font-size: 20px;
+        font-style: italic;
+        color: #FF0000;
+        font-weight: lighter;
+     }
+
+     & p {
+        color: #FF0000;
+     }
+}
+
+.service_icon {
+    background-color: #BB0D0D;
+    width: 10vw;
+    height: 10vw;
+    
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 800px)
+{
+   .service_icon {
+    background-color: #BB0D0D;
+    width: 15vw;
+    height: 15vw;
+    
+    border-radius: 100px;
+}
+
+   .Services_Info {
+
+      border: 1px solid;
+      width: 80%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+
+      & h2 {
+         font-size: 16px;
+      }
+
+      & p {
+         width: 100%;
+         
+      }
+
+   }
+}
