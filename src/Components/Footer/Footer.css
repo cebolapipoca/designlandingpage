@@ -1,0 +1,142 @@
+
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #BB0D0D;
+
+    & .form-label {
+        margin-left: 5px !important;
+    }
+
+    & .form-control {
+        width: 100%;
+    }
+}
+
+.contact_form {
+    width: 100%;
+    text-align: start;
+    color: white;
+    
+    padding: 15px;
+    box-sizing: border-box;
+    
+    & button {
+        width: 100%;
+        margin-top: 10px;
+        background-color: #990a0a;
+        color: white;
+        border: none;
+        padding: 10px;
+    }
+
+     & h1 {
+            font-size: 30px;
+            font-weight: 500;
+            font-style: italic;
+    }
+
+    & h2 {
+         font-size: 20px;
+         margin-bottom: 30px;
+        font-weight: 100;
+        font-style: italic;
+    }
+}
+
+.textarea_form_contact {
+    width: 100%;
+    height: 200px !important;
+    resize: none;
+}
+
+.footer_info {
+
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    & .payments_forms h1{
+        font-size: 30px;
+        color: white;
+        display: none;
+    }
+
+    & .payments_icon {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 95%;
+        left: 0%;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            width: 5%;
+        }
+    }
+
+    & h3 {
+        position: absolute;
+        font-size: 20px;
+        top: 90%;
+        width: 100%;
+        color: white;
+
+        & a {
+            
+            color: rgba(255, 255, 255, 0.822);
+        }
+    }
+}
+
+.Contact_Whatsapp_Button {
+    & h1 {
+        font-size: 35px;
+        color: white;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    & h2 {
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    & button {
+        width: 80%;
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    & button:hover {
+        opacity: 85%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        flex-direction: column; 
+    }
+
+    .footer_info {
+        width: 97%;
+        height: 400px;
+        box-sizing: border-box;
+
+        & h3 {
+            top: 85%;
+        }
+
+        & .payments_icon {
+            top: 92%;
+        }
+    }
+}

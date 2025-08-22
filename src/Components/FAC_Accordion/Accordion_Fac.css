@@ -1,0 +1,16 @@
+
+#Accordion_FAC {
+    margin-top: 200px;
+
+    & h1 {
+        width: 20%;
+        text-align: start;
+        margin: 20px;
+        box-sizing: content-box;
+        font-size: 30px;
+        color: rgb(238, 26, 26);
+        border-bottom: 1px solid;
+        padding: 20px;
+    }
+}
+

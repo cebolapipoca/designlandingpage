@@ -1,0 +1,81 @@
+
+.ProductionStep {
+    width: 60%;
+    height: 400px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 3px 1px rgb(0, 0, 0), 1px -2px 1px rgb(0, 0, 0);
+    
+    & h1 {
+       background-color: transparent;
+       font-weight: 600;
+       font-style: italic;
+       border-bottom: 1px solid;
+       width: 50%;
+       margin-bottom: 30px;
+    }
+
+    & h2 {
+        font-size: 20px;
+        color: rgb(238, 26, 26);
+        text-align: center;
+        width: 70%;
+        font-weight: 100;
+        font-style: italic;
+      
+    }
+}
+
+.ProductionStep_left {
+    margin-right: 20%;
+    
+}
+
+.ProductionStep_right {
+    margin-left: 20%;
+}
+
+.ProductionStep_number {
+    font-size: 38px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    padding: 2px;
+    color: red;
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .ProductionStep {
+        width: 80%;
+
+        & h1 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        & h2 {
+            font-size: 17px;
+            width: 100%;
+        }
+    }
+
+    .ProductionStep_left {
+        margin-right: 15%;
+
+    }
+
+    .ProductionStep_right {
+        margin-left: 15%;
+    }
+}

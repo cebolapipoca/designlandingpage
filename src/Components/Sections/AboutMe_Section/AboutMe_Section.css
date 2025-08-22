@@ -1,0 +1,74 @@
+
+.AboutMe_Section {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+        font-size: 40px;
+        color: #FF0000;
+        font-weight: 100;
+        font-style: italic;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    & img {
+        width: 30%;
+        border-radius: 300px;
+        padding: 20px;
+        box-shadow: 5px 0px 10px black;
+        margin-bottom: 40px;
+    }
+
+    & p {
+        color: #FF0000;
+        font-weight: 600;
+        width: 80%;
+        text-align: center;
+        font-size: 14px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .AboutMe_Section {
+
+        & img {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .AboutMe_Section {
+
+        & img {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .AboutMe_Section {
+
+        & img {
+            width: 60%;
+        }
+
+        & p {
+            font-size: 11px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .AboutMe_Section {
+
+        & img {
+            width: 80%;
+        }
+    }
+}

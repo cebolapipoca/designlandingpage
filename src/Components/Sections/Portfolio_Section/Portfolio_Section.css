@@ -1,6 +1,6 @@
 
 .Portfolio_Section {
-    width: 99%;
+    width: 100%;
 
     & h1 {
         font-size: 40px;
@@ -67,8 +67,8 @@
     position: absolute;
     opacity: 0%;
     cursor: pointer;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
 
    & button {
         border: 1px solid white;

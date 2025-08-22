@@ -1,0 +1,36 @@
+
+.Depoiments_Section
+{
+    margin-bottom: 30px;
+  
+
+    & h1 {
+        margin-top: 60px;
+        color: red;
+        font-size: 30px;
+        font-weight: 100;
+        font-style: italic;
+        margin-bottom: 60px
+    }
+}
+
+.carousel-item {
+    gap: 500px !important;
+    flex-direction: column;
+    position: relative !important;
+}
+
+.carousel-indicators {
+    & button {
+        background-color: red !important;
+    }
+}
+
+.carousel-control-next-icon {
+    
+
+
+    color: rebeccapurple !important;
+    filter: none;
+     
+}
