@@ -3,6 +3,7 @@ footer {
     width: 100%;
     display: flex;
     background-color: #BB0D0D;
+    
 
     & .form-label {
         margin-left: 5px !important;
@@ -58,6 +59,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-left: 5px;
 
     & .payments_forms h1{
         font-size: 30px;

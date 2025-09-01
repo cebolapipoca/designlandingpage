@@ -1,4 +1,7 @@
 
+
+
+
 .Services_Info {
      width: 20%;
      display: flex;
@@ -7,6 +10,9 @@
      align-items: center;
      height: 100%;
      padding: 20px;
+     position: relative;
+     transition: 1s;
+     
 
      & h2 {
         font-size: 20px;
@@ -25,6 +31,7 @@
     width: 10vw;
     height: 10vw;
     
+    
     border-radius: 100px;
 }
 
@@ -41,7 +48,7 @@
    .Services_Info {
 
       border: 1px solid;
-      width: 80%;
+      width: 90%;
       margin-top: 20px;
       margin-bottom: 20px;
       border-radius: 30px;

@@ -1,15 +1,38 @@
 import React from "react";
 import './Portfolio_Section.css'
+import { useEffect } from "react";
 
 import Project_1 from '../../../Images/0836a1ad-9cea-4637-afcb-3739d1d2f3c3.png'
 import Project_2 from '../../../Images/f35efe7d-6f20-429d-b5ea-ddc0d1a1ca47.png'
 
 
+
 export default function Portfolio_Section()
 {
+
+    useEffect(()=>{
+
+        const PortfolioProjects = Array.from(document.getElementsByClassName('Project_Portfolio'))
+        const PortfolioTitle = document.getElementById('Portfolio_Title')
+        
+
+        PortfolioProjects.push(PortfolioTitle)
+      
+
+        const Observer = new IntersectionObserver((Entries)=>{
+            Entries.forEach((Entry)=>{
+                Entry.target.animate([{left: '10%', opacity: 0}, {left: '0%', opacity: 1}], {duration: 1000})
+            })
+        })
+
+
+        PortfolioProjects.forEach((element)=>{Observer.observe(element)})        
+
+    }, [])
+
     return (
         <section className="Portfolio_Section"> 
-            <h1> Veja alguns de nossos projetos</h1>
+            <h1 id="Portfolio_Title"> Veja alguns de nossos projetos</h1>
 
             <div className="Projects_Portfolio">
                 <div className="Project_Portfolio">
@@ -50,7 +73,7 @@ export default function Portfolio_Section()
                 </div>
             </div>
 
-            <button>Ver todos os projetos</button>
+            <button id="Portfolio_Button">Ver todos os projetos</button>
         </section>
     )
 }

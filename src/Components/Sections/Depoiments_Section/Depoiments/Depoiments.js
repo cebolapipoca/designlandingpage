@@ -1,8 +1,27 @@
 import React from "react";
 import './Depoiments.css'
+import { useEffect } from "react";
 
 export default function Depoiments(props)
 {
+
+    useEffect(()=>{
+        
+                const Depoiments = Array.from(document.getElementsByClassName('Depoiment'))
+                
+                
+        
+                
+                const Observer = new IntersectionObserver((Entries)=>{
+                    Entries.forEach((Entry)=>{
+                        Entry.target.animate([{opacity: 0}, {opacity: 1}], {duration: 1200})
+                    })
+                })
+        
+        
+                Depoiments.forEach((element)=>{Observer.observe(element)})        
+        
+            }, [])
 
     if(props.direction == 'right')
     {

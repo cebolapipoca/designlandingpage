@@ -4,4 +4,48 @@ header {
     width: 99.9%;
     height: 80px;
     background-color: #BB0D0D;
+    position: fixed;
+    opacity: 90%;
+    z-index: 20;
+    top: 0%;
+
+    & ul {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        margin-right: 30px;
+    }
+
+    & li {
+        color: white;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    & li:hover {
+        opacity: 80%;
+    }
+}
+
+#Menu_Dropdown {
+    background-color: #d81c1c;
+    color: white;
+    font-size: 18px;
+    display: none;
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        & li {
+            display: none;
+        }
+    }
+
+    
+    #Menu_Dropdown {
+        display: block;
+    }
 }
