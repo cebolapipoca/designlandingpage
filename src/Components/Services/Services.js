@@ -4,8 +4,6 @@ import './Services.css'
 export default function Services(props)
 {
 
-    
-    
      useEffect(()=>{
 
             const service_elements = Array.from(document.getElementsByClassName('Services_Info'))
@@ -32,7 +30,7 @@ export default function Services(props)
     return (
         <div className={"Services_Info" + " " + props.ClassAnimation}>
             <div className="service_icon">
-                <img></img>
+                <img src={props.image}></img>
             </div>
 
             <h2>Criação de Sites</h2>

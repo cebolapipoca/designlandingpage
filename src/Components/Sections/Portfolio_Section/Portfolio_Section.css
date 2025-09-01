@@ -11,6 +11,10 @@
         margin-bottom: 60px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     & button {
         width: 50%;
         padding: 10px;
@@ -99,9 +103,16 @@
         h1 {
             font-size: 26px;
         }
+
+        button {
+        font-size: 15px;
+    }
+
     }
 
     .Projects_Portfolio {
         gap: 40px;
     }
+
+    
 }

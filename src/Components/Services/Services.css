@@ -15,24 +15,32 @@
      
 
      & h2 {
-        font-size: 20px;
+        font-size: 25px;
         font-style: italic;
         color: #FF0000;
         font-weight: lighter;
+        margin-bottom: 40px;
+        margin-top: 30px;
      }
 
      & p {
         color: #FF0000;
      }
+
 }
 
 .service_icon {
     background-color: #BB0D0D;
     width: 10vw;
     height: 10vw;
-    
-    
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      width: 50%;
+    }
 }
 
 @media screen and (max-width: 800px)
@@ -62,5 +70,19 @@
          
       }
 
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .service_icon {
+      width: 30vw;
+      height: 30vw;
+   }
+
+   .Services_Info {
+
+      & h2 {
+         font-size: 25px;
+      }
    }
 }
